@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Twilio for Marketing Cloud Account Engagement</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <description>Twilio Marketing App Extension for MCAE.</description>
+    <namespacePrefix>asj2</namespacePrefix>
+    <orgFeaturePayloads>
+        <dependencyDetectionType>M</dependencyDetectionType>
+        <feature>MarketingAppExtAction</feature>
+    </orgFeaturePayloads>
+    <types>
+        <members>HttpCalloutMockFactory</members>
+        <members>SendSmsAction</members>
+        <members>SendSmsAction_Tests</members>
+        <members>SendWhatsAppMessageAction</members>
+        <members>SendWhatsAppMessageAction_Tests</members>
+        <members>TwilioUtil</members>
+        <members>TwilioUtil_Tests</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>TwilioMCAESetting__mdt.FromPhoneNumberWhatsApp__c</members>
+        <members>TwilioMCAESetting__mdt.FromPhoneNumber__c</members>
+        <members>TwilioMCAESetting__mdt.MessagingServiceSid__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>TwilioMCAESetting.default</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>TwilioMCAESetting__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>TwilioMCAESetting__mdt-Twilio MCAE Setting Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Twilio</members>
+        <name>MarketingAppExtension</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
+    <version>56.0</version>
+</Package>

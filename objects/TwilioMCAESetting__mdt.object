@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>FromPhoneNumberWhatsApp__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Twilio From Phone Number for WhatsApp. Please note that Messaging SID (if present) will take precedence over this.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>From Phone Number For WhatsApp</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FromPhoneNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Twilio From Phone Number. Please note that Messaging SID (if present) will take precedence over this.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>From Phone Number</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MessagingServiceSid__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Twilio Messaging Service SID</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Messaging Service Sid</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Twilio MCAE Setting</label>
+    <pluralLabel>Twilio MCAE Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

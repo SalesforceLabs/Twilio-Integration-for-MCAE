@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MarketingAppExtension xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Twilio Marketing App Extension</description>
+    <isActive>false</isActive>
+    <marketingAppExtActions>
+        <actionName>Send an SMS</actionName>
+        <actionParams>{
+  &quot;isStandard&quot;: false,
+  &quot;type&quot;: &quot;apex&quot;
+}</actionParams>
+        <actionSchema>{
+  &quot;properties&quot;: {
+    &quot;toPhoneNumber&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;To Phone Number&quot;,
+      &quot;value&quot;: &quot;{{Recipient.Phone}}&quot;
+    },
+    &quot;messageToSend&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;Your Message&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;mediaUrl&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;Media URL (Optional)&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  },
+  &quot;view&quot;: {
+    &quot;components&quot;: [
+      {
+        &quot;definition&quot;: &quot;lightning/control&quot;,
+        &quot;scope&quot;: &quot;#/properties/mediaUrl&quot;
+      },
+      {
+        &quot;definition&quot;: &quot;lightning/control&quot;,
+        &quot;scope&quot;: &quot;#/properties/toPhoneNumber&quot;
+      },
+      {
+        &quot;definition&quot;: &quot;lightning/control&quot;,
+        &quot;scope&quot;: &quot;#/properties/messageToSend&quot;
+      }
+    ]
+  },
+  &quot;required&quot;: [
+    &quot;toPhoneNumber&quot;,
+    &quot;messageToSend&quot;
+  ]
+}</actionSchema>
+        <actionSelector>asj2__SendSmsAction</actionSelector>
+        <apiName>SendSMS</apiName>
+        <description>Send SMS via Twilio</description>
+        <isActive>false</isActive>
+        <marketingAppExtension>asj2__Twilio</marketingAppExtension>
+    </marketingAppExtActions>
+    <marketingAppExtActions>
+        <actionName>Send a WhatsApp Message</actionName>
+        <actionParams>{
+  &quot;isStandard&quot;: false,
+  &quot;type&quot;: &quot;apex&quot;
+}</actionParams>
+        <actionSchema>{
+  &quot;properties&quot;: {
+    &quot;toPhoneNumber&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;To WhatsApp Phone Number&quot;,
+      &quot;value&quot;: &quot;{{Recipient.Phone}}&quot;
+    },
+    &quot;messageToSend&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;Your Message&quot;,
+      &quot;value&quot;: &quot;&quot;
+    },
+    &quot;mediaUrl&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;Media URL (Optional)&quot;,
+      &quot;value&quot;: &quot;&quot;
+    }
+  },
+  &quot;view&quot;: {
+    &quot;components&quot;: [
+      {
+        &quot;definition&quot;: &quot;lightning/control&quot;,
+        &quot;scope&quot;: &quot;#/properties/mediaUrl&quot;
+      },
+      {
+        &quot;definition&quot;: &quot;lightning/control&quot;,
+        &quot;scope&quot;: &quot;#/properties/toPhoneNumber&quot;
+      },
+      {
+        &quot;definition&quot;: &quot;lightning/control&quot;,
+        &quot;scope&quot;: &quot;#/properties/messageToSend&quot;
+      }
+    ]
+  },
+  &quot;required&quot;: [
+    &quot;toPhoneNumber&quot;,
+    &quot;messageToSend&quot;
+  ]
+}</actionSchema>
+        <actionSelector>asj2__SendWhatsAppMessageAction</actionSelector>
+        <apiName>SendWhatsAppMessage</apiName>
+        <description>Send WhatsApp message via Twilio</description>
+        <isActive>false</isActive>
+        <marketingAppExtension>asj2__Twilio</marketingAppExtension>
+    </marketingAppExtActions>
+    <masterLabel>Twilio</masterLabel>
+</MarketingAppExtension>
